@@ -2,6 +2,7 @@ import React from 'react';
 // Import Component
 import Tweet from "./Components/Tweet"
 import CreateTweet from './Components/CreateTweet';
+import TweetList from './Components/TweetList';
 
 function App() {
   // Here is where we can write JS
@@ -11,7 +12,7 @@ function App() {
     <div>
       <h1>Hello React</h1>
       <CreateTweet />
-      <Tweet author={name} message={message}/>
+      <TweetList name={name} message={message} />
     </div>
   );
 }
